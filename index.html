@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Custom Video Player</title>
+
+<!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+<!-- CONTENT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <body>
+    <header role="banner">
+    </header>
+
+    <main role="main">
+
+      <section class="video-container">
+
+        <!-- Video -->
+        <video id="video">
+          <source id="video1" src="videos/norris.mp4" type="video/mp4">
+          <p>
+            Your browser doesn't support HTML5 video.
+            <a href="videos/norris.mp4">Download</a> the video instead.
+          </p>
+        </video>
+
+        <!-- Video Controls -->
+        <section class="video-control-panel" id="video-controls">
+          <button type="button" id="play-pause">Play</button>
+          <input type="range" id="seek-bar" value="0">
+          <button type="button" id="mute">Mute</button>
+          <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+          <button type="button" id="full-screen">Full-Screen</button>
+        </section>
+
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+    </footer>
+
+  </body>
+
+<!-- JAVASCRIPT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/video.js"></script>
+
+</html>
